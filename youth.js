@@ -23,9 +23,9 @@ let READTIME = $.getdata('readtime_zq');
 let cardTime = $.getdata('zqtime')||"05";//打卡时间
 let rotaryscore=0,doublerotary=0; 
 
-let cookieArr = [], cookie = '',
-    readArr = [], articlebodyVal ='',
-    timeArr = [], timebodyVal = '',
+let cookieArr = [], cookie = '&uid=15120451&cookie=MDAwMDAwMDAwMJCMpN-w09Wtg5-Bb36eh6CPqHualq2jmrCaraqxt3myhHyGl664qmqXr6NthJl7mI-shMmXeqDau4StacS3o7GFonrgsKm6aIJ5n22EY2Ft&cookie_id=8574c93737756be3283898b26ec0afef',
+    readArr = [], articlebodyVal ='p=9NwGV8Ov71o%3DgW5NEpb6rjab0hHSxXenkWHSkCwB26b0x_gtnWSAWxdTXCgxxOuanBZBDDHcRGuYr9cdhOsykFcPSvUbz8nctK010ABRHWMY0JYQF10Ra4QtysfADABfg0ri1_9uDtjctZVQ4iWawo806Pw2nho8HrITyJL5qiKi3HhySKEau4sCkhAe6Ghm2hvZv6QeR28ip_3wBfpz33br0xk0LHpWkVF-5f1gID8W1FUk53QqzqMGmYvJnJNeJLZU_NMhewAjBlUs5Dq5GYt5D1y_yyyXf_jTXXipKebSRVHJ8wSQLAkGDPiNY1hme1TNGehb2FWtJ6KvNDKOlJaKS7BW8goQ1Vy2s3ph42WDxRQB84HZNup8PpasbocOvk6_fV9qfQgj78QMQ1FgRr2raEY3PB28rQuGgbMVYidZPygV5nxvcw9KmzAtzJpoifVnKk0j03rTJ11Pkgn1HdSNYyjU1lU8Em37xqOB7wKEWnT4lEMzQgvtcxcpGcd3UcRY0Zsj8_Jqf0KzJbncmIYMVe-DqaG8LKxtnFFR_yIRLpRNM-PWvvNiLXkSETardSf-OLefw6kWG13f6fY8anz3lvjkY89JX2GI5qgOqHWTIMWXobYui1DmpPeeglACnHBLBUIPxqC74_xjckMlLEGi-jTdlCkbCbEDTWFJTzpzv04J7alwRW_HD_IiTcftKGbtrlCjrLNMXnCadMLYpo0pbFBt7cEaLGY_IZxL5HdCyNTITf9H6ivIB4eztsdvIBmbhrzUVemFbHhwJh_FazbyId7JfnA3rNATvK_En54jyqaxJy8BHvhucBiQd52MmtCtPsO9IpzIzADp00wp9R0LZGDbs9yAq7vNnQh-qpyLrsGSmFvJQU7aP5GQDx4zbfeAL1WSRcqY',
+    timeArr = [], timebodyVal = 'p=9NwGV8Ov71o%3DgW5NEpb6rjb84bkaCQyOq-myT0C-Ktb_pYgxM135XoUfaIpfBqAxRGnFAl1k71C_zMPfUdFlHJTcuxYW9LgBCdTzuda7fnA8r2K-D8AqSYWzt-6LIEcC8SPkaeAgjjv1iCeYI_yckjGbVxJEy1xSQc4qp-_g8cJecymP34l6mTd4qLghgvul8ekdsO2mfFveGveOAJ7n6Ur0kuy9VRaovnp8WQM32UZ40FjgHKAy7ox4zACFrwhhVFWERx4E-YreUX1LrpC-IvZCaDd43PQzr2BZdtJF6lv6hA9qKYIylBDq5jt7fbBaVI0cj-SQhifU0ShwUk0_8JZMy7dvRQHMGPwcszTcIDV3mGNgAvAXHKb_IXGg8gxUxLcClXhCclmdgEulbtE1MbTs47ZxwN5YMnH5_oADN6mxhakt9_KMTb7ub_0J_a6Abb6-UjsJDHmgu_0eV_pcbkEQmVI9MUpVRLCg7yzU-LFSMJ_Ey35RCKCjfCUS70sBYR3Fic1st_iBWqyJkVOJdi7YQEr9kyXNVU8sXh_N1izxK6wthfY9TTQXe4P90lojxrYKLsOyNjMe8fFBkUYagp-EFvl6dsDzmoEblWZ0-ZyFLHTz6gE9cMAwuQ6dUtXkeBx-WKYsIDfcHM_bvXxT87nax091vHDxeViOpJn0bScNa5thPu1Jn8Al2rb0okw4Qk_s6MxjST-dOWL5zqiCyeeYE-v0UpXfICk5w1H1v8fG8q8a6TzgcByvoCgATtSyhf2epthzltrlztu0zcMmUSqrJLkAsg5mii338xqw91IvcypcYPy5PtSZN3e_px1kR8A5v0L_tLiu6Qc8MtcLEcM%3D',
     detail = ``, subTitle = ``;
 if(!$.isNode()&&cookieYouth.indexOf("#") ==-1){
   let zqAc = $.getval('zqExecAc') || '';
